@@ -1,0 +1,9 @@
+from django.db import models
+
+# Create your models here.
+
+class Alumno(models.Model):
+    apaterno=models.CharField(max_length=50,verbose_name="Apellido paterno")
+    amaterno=models.CharField(max_length=50,verbose_name="Apellido materno")
+    nombre=models.CharField(max_length=100,verbose_name="Nombre (s)")
+    fecha_nacimiento=models.DateField(verbose_name="Fecha de nacimiento ingreso",null=False,blank=False)
